@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Outfit:wght@100;200;300;400;700&family=Spartan:wght@100;300;500;600;800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.clear {
+    clear: both;
+    float: none;
+}
+
+/** MAIN-MENU CSS**/
+
+.main-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    height: 100%;
+}
+
+.menu .wrapper-menu {
+    width: 200px;
+    height: 100%;
+    background-image: linear-gradient(#045757, #082032);
+    padding: 15px 0px;
+}
+
+.menu .wrapper-menu ul li {
+    padding: 8px;
+
+}
+
+.menu .wrapper-menu ul li a {
+    color: #34e1ff;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 8px;
+
+}
+
+.menu .wrapper-menu ul li a .fas {
+    width: 25px;
+}
+
+.menu .wrapper-menu ul li a:hover {
+    background-color: #191919;
+    width: 185px;
+    border-radius: 12px;
+    color: white;
+    margin-left: 5px;
+}
+
+/** MAIN CONTENT CSS**/
+.main-content {
+    padding: 1% 1%;
+    background-color: #191919;
+    width: 86%;
+    height: 100%;
+    margin-left: 200px;
+    overflow: auto;
+}
+
+/** MAIN CONTENT SCROLLBAR CSS**/
+.main-content::-webkit-scrollbar {
+    width: 20px;
+}
+
+.main-content::-webkit-scrollbar-track {
+    background-color: #191919;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: #252525;
+    border-radius: 25px;
+}
+
+.main-content::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+    border-radius: 10px;
+}
+
+
+.top-header {
+    width: 86%;
+    position: inherit;
+    height: 80px;
+    color: white;
+    padding: 15px 25px;
+    margin-left: 200px;
+    background-image: linear-gradient(to left, #082032, #045757);
+    border-bottom: 2px solid #152D35;
+    padding-left: 70px;
+}
+
+/** MAIN CONTENT -  ALERT HEADER CSS**/
+.alert-header {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+/** ALERT MESSAGE CSS**/
+
+.alert-success {
+    color: #000000;
+    padding: 10px 20px;
+    background-color: #90EE90;
+    border-bottom: 3px solid #228b22;
+    width: fit-content;
+    height: 38px;
+    font-size: 14px;
+}
+
+.alert-failed {
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #FF4433;
+    border-bottom: 3px solid #bb0000;
+    width: fit-content;
+    height: 38px;
+    font-size: 14px;
+}
+
+
+
+/** MENU BAR USER ACCOUNT CSS**/
+
+.user-account {
+    padding: 10px 2px;
+    display: flex;
+    width: 170px;
+    height: 60px;
+    margin: 15px 15px;
+    font-size: 11x;
+    background-color: #191919;
+    border-radius: 12px;
+    color: white;
+}
+
+.user-account i {
+    font-size: 23px;
+    color: #00ffff;
+    padding-left: 8px;
+}
+
+.user-account p {
+    margin-left: 12px;
+    line-height: 18px;
+}
+
+.account-type {
+    color: #04d1d1;
+}
+
+
+/** FOOTER CSS**/
+
+.footer {
+    margin-left: 200px;
+    bottom: 0;
+    width: auto;
+    background-color: #FF4C29;
+    color: #ffffff;
+    height: 4%;
+    color: #191919;
+    padding-left: 140px;
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+.footer i {
+    float: left;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/** DASHBOARD CONTENT CSS**/
+
+.dash-box img {
+    width: 50px;
+    height: 50px;
+    left: 0;
+    margin-right: 12px;
+    background-color: #2C394B;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.dash-box {
+    width: 240px;
+    height: 80px;
+    margin: 25px 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: flex;
+    float: left;
+    background-color: #FF5677;
+    background-image: linear-gradient(to left, #FF5677, #9145B6);
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    transition: transform .3s;
+}
+
+.dash-box h2 {
+    padding-left: 10px;
+}
+
+.dashboard1 {
+    width: 99%;
+    background-color: #ffffff;
+    height: 150px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 40px;
+    padding-left: 12px;
+}
+
+.dash-box:hover {
+    transform: scale(1.06);
+    transition: transform .3s;
+}
+
+
+/** LOGIN -LOGOUT MESSAGE CSS**/
+
+.top-login-alert {
+    color: #000000;
+    padding: 5px 20px;
+    background-color: #90EE90;
+    border-bottom: 3px solid #228b22;
+    width: 220px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.top-login {
+    width: 225px;
+    margin-left: 20px;
+    position: sticky;
+}
+
+/** TABLE CONTENT CSS**/
+
+.table-main {
+    width: 100%;
+    color: white;
+}
+
+.table-main tr th {
+    border-bottom: 2px solid white;
+    padding: 8px;
+    text-align: center;
+    background-color: #314949;
+}
+
+.table-main tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+/** FORM TABLE CONTENT CSS**/
+
+.table-form {
+    color: white;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 500px;
+}
+
+.table-form tr {
+    width: 260px;
+}
+
+
+.table-form input[type=text],
+input[type=number],
+input[type=password],
+select {
+    width: 100%;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.table-form input[type=date] {
+
+    background-color: #34e1ff;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.table-form option {
+    color: #27323A;
+
+}
+
+/** LEAD VIEW CONTENT CSS**/
+.lead-view {
+    background-color: rgb(211, 211, 211);
+    color: #191919;
+    margin: 20px 40px;
+    width: 500px;
+    padding: 20px 20px;
+    font-size: 19px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.lead-container {
+    background-color: rgb(5, 150, 155);
+    margin: 15px 0;
+    display: flex;
+    height: 40px;
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+
+.lead-header {
+    width: 150px;
+    color: #191919;
+}
+
+/** PRODUCT LOGO CSS**/
+.prod-logo {
+    width: 150px;
+    transition: transform .3s;
+    margin-left: 15px;
+}
+
+.prod-logo:hover {
+    transform: scale(1.2);
+    transition: transform .3s;
+}
+
+
+/** BUTTONS CSS**/
+
+.btn-main {
+    text-decoration: none;
+    background-color: #045757;
+    padding: 1%;
+    color: white;
+    border-radius: 10px;
+    margin-left: 88%;
+    position: relative;
+}
+
+.btn-main:hover {
+    background-color: #06c1da;
+    color: #191919;
+}
+
+.btn-form {
+    padding: 10px;
+    border: 0;
+    color: #191919;
+    font-size: 17px;
+    width: 170px;
+    cursor: pointer;
+    background-color: #21b621;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn-form:hover {
+    background-color: #2df32d;
+}
+
+.btn-green {
+    color: #727272;
+    padding: 7px;
+    font-size: 16px;
+}
+
+.btn-green:hover {
+    color: #34e1ff;
+}
+
+.btn-pass {
+    background-color: #045757;
+    color: #f1f1f1;
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.btn-pass:hover {
+    background-color: #06c1da;
+    color: #191919;
+}
+
+.btn-red {
+    text-decoration: none;
+    color: #727272;
+    padding: 7px;
+    font-size: 16px;
+    border: 0;
+}
+
+.btn-red:hover {
+    color: #fa2a17;
+    transform: scale(5);
+}
+
+/** LOGIN PAGE CSS**/
+
+.login-form input[type=text],
+input[type=password] {
+    width: 100%;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.btn-login {
+    border: 0;
+    width: 100px;
+    height: 40px;
+    background-color: lawngreen;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: transform .3s;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.btn-login:hover {
+    background-color: lawngreen;
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+
+.alert-login-page {
+    width: auto;
+    height: 50px;
+}
+
+.login-alert-failed {
+    width: 350px;
+    padding: 10px 10px;
+    color: #FF0000;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.login-form {
+    border: 1px solid grey;
+    width: 30%;
+    padding: 2%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.login-logo {
+    margin-left: 70%;
+}
+
+/** Date & Time CSS**/
+
+.date-time {
+    width: 400px;
+    margin-left: 70%;
+    color: #02a5a5;
+}
+
+.date {
+    display: inline-block;
+
+}
+
+.time {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 40px;
+    color: #02a5a5;
+}
+
+/** WHOLE SITE SCROLL BAR CSS**/
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #191919;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(85, 85, 85);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68);
+    border-radius: 10px;
+}
+
+
+/** CHART CSS**/
+
+
+.charts {
+    width: 35%;
+    margin: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.chart1 {
+    padding: 10px;
+
+
+}
+
+.chart1 h2 {
+    color: #191919;
+    font-weight: bold;
+}
+
+.dash-budget {
+    width: 40%;
+    background-image: linear-gradient(to left, #03C4A1, #0F4C75);
+    margin-left: 600px;
+    margin-top: -470px;
+    padding: 30px;
+    line-height: 35px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.dash-budget:hover {
+    transform: scale(1.06);
+    transition: 0.3s;
+}
+
+
+.dash-lead-status {
+    width: 25%;
+    background-image: linear-gradient(#0da87a, #0f5875);
+    margin-left: 600px;
+    margin-top: 40px;
+    padding: 30px;
+    line-height: 35px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.dash-lead-status h2{
+
+    font-weight: bold;
+}
+
+.dash-lead-status:hover {
+    transform: scale(1.06);
+    transition: 0.3s;
+}
+
+/** SUPPORT PAGE CSS**/
+
+.support-wrapper {
+    background-color: white;
+    width: 95%;
+    margin: 20px 30px;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 25px;
+    float: left;
+}
+
+.support-doc{
+    background-color: #0e0e0e;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 30px;
+    width: 47%;
+    height:280px;
+    float: left;
+}
+
+.support-doc h2{
+    color: white;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.support-wrapper h1{
+    margin-bottom: 20px;
+}
+.support-doc li {
+    color: #ffffff;
+    padding-bottom: 10px;
+    list-style-type: circle;
+}
